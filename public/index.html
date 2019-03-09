@@ -1,14 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="image/chat.png"/>
+    <title>Chatting Web</title>
 </head>
-<body>
-    <p>Server İs up</p>
-    <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="js/index.js"> </script>
+<body class="centered-form">
+    <div class="centered-form__form">
+                <form action="chat.html">
+                        <div class="form-field"><h3>Chat Odası</h3></div>
+                        <div class="form-field">
+                            <label >Kullanıcı Adınız </label>
+                            <input type="text" name="name" autofocus>
+                        </div>
+                        <div class="form-field">
+                                <label >Oda Adı </label>
+                                <input type="text" name="room" autofocus>
+                        </div>
+                        <div class="form-field">
+                            <button > Giriş</button>
+                        </div>
+
+
+                </form>
+
+    </div>
+    
 </body>
 </html>
