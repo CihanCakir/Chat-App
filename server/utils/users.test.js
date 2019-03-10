@@ -9,25 +9,25 @@ describe('Users', () => {
     users = new Users();
     users.users = [{
       id: "1",
-      name: "Mike",
-      room: "The Office Fans"
+      name: "Yagmur",
+      room: "Elite IK"
     },{
       id: "2",
-      name: "Sam",
-      room: "Scrubs Fans"
+      name: "Mustafa",
+      room: "Elite Teknik"
     },{
       id: "3",
-      name: "Jose",
-      room: "The Office Fans"
+      name: "veysel",
+      room: "Elite IK"
     }]
   });
 
   it('should add new user', () => {
     let users = new Users();
     let user = {
-      id: "sdfsdf",
-      name: "WDJ",
-      room: "The Office Fans"
+      id: "HSCC",
+      name: "CC",
+      room: "CEO"
     };
 
     let reUser = users.addUser(user.id, user.name, user.room);
@@ -35,33 +35,33 @@ describe('Users', () => {
     expect(users.users).toEqual([user]);
   });
 
-  it('should return names for the office fans', ()=>{
-    let userList = users.getUserList('The Office Fans');
+  it('IK uyelerini dondurmelı', ()=>{
+    let userList = users.getUserList('Elite IK');
 
-    expect(userList).toEqual(['Mike', 'Jose']);
+    expect(userList).toEqual(['Yagmur', 'Veysel']);
   });
 
-  it('should return names for Scrubs Fans', ()=>{
-    let userList = users.getUserList('Scrubs Fans');
+  it('Teknik uyelerını dondurmelı', ()=>{
+    let userList = users.getUserList('Elite Teknik');
 
-    expect(userList).toEqual(['Sam']);
+    expect(userList).toEqual(['Mustafa']);
   });
 
-  it('should find user', () => {
+  it('kullanıcı bulmalı', () => {
     let userID = '2',
         user = users.getUser(userID);
 
     expect(user.id).toBe(userID);
   });
 
-  it('should not find user', () => {
+  it('kullanıcıyı bulmamalı', () => {
     let userID = '150',
         user = users.getUser(userID);
 
     expect(user).toBeUndefined();
   });
 
-  it('should not remove a user', () => {
+  it('kullaniciyi cikarmamali', () => {
     let userID = '108',
         user = users.removeUser(userID);
 
@@ -69,7 +69,7 @@ describe('Users', () => {
     expect(users.users.length).toBe(3);
   });
 
-  it('should remove a user', () => {
+  it('kullaniciyi cikarmali', () => {
     let userID = '1',
         user = users.removeUser(userID);
 
