@@ -52,7 +52,7 @@ socket.on('newMessage', function (message) {
 
     document.querySelector('#messages').appendChild(div);
     scrollToBottom();
-    // bu amına koduğumun selectoru yüzünden yanlış div etiketini vermişim body dedğil gösterilecek mesajın yerini belirtmek için kullanılır !!!!bir1
+    //  selectoru yüzünden yanlış div etiketini vermişim body dedğil gösterilecek mesajın yerini belirtmek için kullanılır !!!!bir1
 
 
 /*
