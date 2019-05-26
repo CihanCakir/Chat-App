@@ -4,10 +4,8 @@
 
 //kullanıcıların belirli bir oda üzerinden mesajlaşmaları şuan mümkün join methodunu amacı buydu
 // şimdi burada yapılan şey ise oluşturulan sınıf sayesinde her yeni sınıf için birbirinden bağımsız sınıflar oluşuturarak chat gruplarının bağımsızlığı
-// sağlanmış olur yani konuşmalar karışmaz kullanıcı istediği odaya gider ve orada kalır.... BAĞIMSIZLIK LETS GET CODİNGGG 
-// ve kullanıcılar bölümünde o odada bulunan kimselerin isimleri gözükür bir diziye atarak aşağıda belirtilmiştir ... BUKADAR DESC YETERRR!! 
-// Kodlardan anlaşılıyor zaten. YORMAYIN ☻
-class Users {
+// sağlanmış olur yani konuşmalar karışmaz kullanıcı istediği odaya gider ve orada kalır....
+// ve kullanıcılar bölümünde o odada bulunan kimselerin isimleri gözükür bir diziye atarak aşağıda belirtilmiştir ...
     constructor() {
       this.users = [];
     }
